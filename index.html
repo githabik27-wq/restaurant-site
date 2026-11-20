@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Застолье — Семейный ресторан</title>
+<meta name="description" content="Семейный ресторан «Застолье» в центре Екатеринбурга. Домашние рецепты, интуитивное меню, бронь столиков и доставка. Атмосфера настоящего праздника.">
+<meta property="og:title" content="Семейный ресторан «Застолье» — Екатеринбург">
+<meta property="og:type" content="restaurant">
+<meta property="og:description" content="Бронь столов и доставка — семейный ресторан «Застолье» в центре Екатеринбурга.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23C7A12B'%3E%3Ccircle cx='16' cy='16' r='16'/%3E%3Ctext x='50%25' y='56%25' font-size='24' font-family='Georgia' text-anchor='middle' fill='%23fff'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Застолье",
+  "legalName": "ООО «Застолье»",
+  "description": "Семейный ресторан «Застолье» — домашние рецепты, бронь столов и доставка еды.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Улица Волжская, дом 11",
+    "addressLocality": "Екатеринбург",
+    "postalCode": "620036",
+    "addressRegion": "Свердловская область",
+    "addressCountry": "Россия"
+  },
+  "telephone": "+7 (343) 271-40-12",
+  "email": "hello@zastolje.ru",
+  "openingHours": ["Mo-Th 11:00-23:00", "Fr 12:00-02:00", "Sa 12:00-03:00", "Su 13:00-22:00"],
+  "servesCuisine": ["Russian", "European"],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "247"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ============ Шапка ============ -->
+<header class="header" id="header" aria-label="Шапка сайта">
+  <div class="container header__row">
+    <a class="logo" href="#hero">Застолье</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">≡</button>
+    <nav class="nav" aria-label="Навигация по сайту">
+      <a class="nav__link" href="#menu">Меню</a>
+      <a class="nav__link" href="#specials">Акции</a>
+      <a class="nav__link" href="#reviews">Отзывы</a>
+      <a class="nav__link" href="#contacts">Контакты</a>
+      <a class="nav__btn nav__btn--gold" href="#booking" data-open="booking">Забронировать</a>
+      <a class="nav__btn nav__btn--delivery" href="#cart" data-open="cart"><span class="cart-badge" id="cart-count">0</span> Доставка</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="hero" aria-label="Главный экран">
+  <img class="hero__image" src="assets/hero.jpg" alt="Интерьер семейного ресторана «Застолье» — золотое освещение, деревянные столы и премиальная атмосфера">
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow">Семейный ресторан в центре Екатеринбурга</p>
+    <h1 class="hero__title">Застолье</h1>
+    <p class="hero__desc">Домашние рецепты, тёплая атмосфера и всегда добрый приём. Угостим вкусом семьи.</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="#booking" data-open="booking">Забронировать стол</a>
+      <a class="btn btn--ghost" href="#cart" data-open="cart">Заказать доставку</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ О ресторане ============ -->
+<section class="section about reveal" id="about">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section-title">О ресторане</h2>
+      <p class="section-sub">Семейная атмосфера, шеф-повар с традициями и ресторан, где гостей ждут как своих.</p>
+    </div>
+    <div class="about__grid">
+      <div class="about__text">
+        <p class="about__body">«Застолье» — семейный ресторан, в котором кухня сошлась с атмосферой настоящего домашнего праздника. Это новое место в центре города: за массивной обеденной зоной пахнет горячим, а обслуживают гостей с каменной вежливостью и доброжелательностью, как для своих родственников. Здесь принято дружить, праздновать и не спешить.</p>
+        <div class="about__facts">
+          <div class="about__fact"><span class="fact__num">12</span><span class="fact__text">мест — столы на открытой кухне и в основном зале</span></div>
+          <div class="about__fact"><span class="fact__num">24</span><span class="fact__text">блюда в основном меню</span></div>
+          <div class="about__fact"><span class="fact__num">∞</span><span class="fact__text">семейные праздники</span></div>
+        </div>
+      </div>
+      <div class="about__photo">
+        <img src="assets/chef.jpg" alt="Шеф-повар «Застолье» — Юрий, опыт 45 лет в кухне">
+        <p class="about__photo-caption">Шеф-повар — Юрий, 45 лет в кухне</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Меню ============ -->
+<section class="section menu reveal" id="menu">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section-title">Меню</h2>
+      <p class="section-sub">Выберите категорию — и всё соберётся само. Больше никаких меню-пазлов.</p>
+    </div>
+
+    <div class="menu__hits">
+      <h3 class="menu__hits-title">Хиты меню</h3>
+      <div class="carousel" id="hits-carousel">
+        <button class="carousel__arrow carousel__arrow--prev" id="hits-prev" aria-label="Предыдущий хит">&#8249;</button>
+        <div class="carousel__track" id="hits-track">
+          <div class="carousel__slide">
+            <article class="carousel-card">
+              <div class="carousel-card__media">
+                <img src="assets/signature.jpg" alt="Стейк «Тедди» из говядины — серединка розовая, масло и рулетик из сыра" loading="lazy">
+                <span class="carousel-card__badge">Популярное</span>
+              </div>
+              <div class="carousel-card__body">
+                <h3 class="carousel-card__name">Стейк «Тедди» из говядины</h3>
+                <p class="carousel-card__price">780 ₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+              </div>
+            </article>
+          </div>
+          <div class="carousel__slide">
+            <article class="carousel-card">
+              <div class="carousel-card__media">
+                <img src="assets/salad.jpg" alt="Салат «Семейный» — филе куриное, огурцы, фета, сметана" loading="lazy">
+              </div>
+              <div class="carousel-card__body">
+                <h3 class="carousel-card__name">Салат «Семейный»</h3>
+                <p class="carousel-card__price">340 ₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+              </div>
+            </article>
+          </div>
+          <div class="carousel__slide">
+            <article class="carousel-card">
+              <div class="carousel-card__media"><div class="carousel-card__nophage">Т</div></div>
+              <div class="carousel-card__body">
+                <h3 class="carousel-card__name">Тирамису в бокале</h3>
+                <p class="carousel-card__price">220 ₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+              </div>
+            </article>
+          </div>
+          <div class="carousel__slide">
+            <article class="carousel-card">
+              <div class="carousel-card__media"><div class="carousel-card__nophage">Ч</div></div>
+              <div class="carousel-card__body">
+                <h3 class="carousel-card__name">Чизкейк с ягодами вишни</h3>
+                <p class="carousel-card__price">240 ₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="carousel__arrow carousel__arrow--next" id="hits-next" aria-label="Следующий хит">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="menu-filters">
+      <div class="category-buttons" role="group" aria-label="Категории меню">
+        <button class="cat-btn active" data-cat="all">Все</button>
+        <button class="cat-btn" data-cat="breakfast">Завтраки</button>
+        <button class="cat-btn" data-cat="salads">Салаты</button>
+        <button class="cat-btn" data-cat="hot">Горячее</button>
+        <button class="cat-btn" data-cat="sweets">Десерты</button>
+        <button class="cat-btn" data-cat="bar">Барная карта</button>
+      </div>
+      <div class="food-filters" role="group" aria-label="Фильтры блюд">
+        <button class="chip" data-filter="veg">Вегетарианское</button>
+        <button class="chip" data-filter="kid">Детское меню</button>
+        <button class="chip" data-filter="glutenfree">Без глютена</button>
+        <button class="chip" data-filter="spicy">Острое</button>
+      </div>
+    </div>
+
+    <div class="dishes-grid" id="dishes-grid">
+      <!-- Завтраки -->
+      <article class="dish" data-cat="breakfast" data-tags="breakfast veg kid" data-name="Яичница фри-стайл с ветчиной" data-price="260" data-photo="assets/breakfast.jpg">
+        <div class="dish__media">
+          <img src="assets/breakfast.jpg" alt="Плитка яичницы фри-стайл с ветчиной, помидорами и перцем" loading="lazy">
+          <span class="dish__badge">Популярное</span>
+        </div>
+        <div class="dish__body">
+          <h3 class="dish__name">Яичница фри-стайл с ветчиной</h3>
+          <p class="dish__desc">Ветчина, хрустящие яйца, свежая петрушка и чеснок на сковородке.</p>
+          <div class="dish__meta">
+            <span>300 г</span>
+            <span class="dish__price">260 ₽</span>
+            <span class="dish__tags">#Вегетарианское #Детское</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="breakfast" data-tags="breakfast kid">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="Панкейки «Семейные» с вареньем" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Панкейки «Семейные»</h3>
+          <p class="dish__desc">Сладкие панкейки с вареньем и сливочным соусом, для всей семьи.</p>
+          <div class="dish__meta">
+            <span>220 г</span>
+            <span class="dish__price">320 ₽</span>
+            <span class="dish__tags">#Детское</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="breakfast" data-tags="breakfast veg glutenfree">
+        <div class="dish__media"><img src="assets/gallery1.jpg" alt="Суфле из чеснока и помидоров в сковороде" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Суфле из чеснока и помидоров</h3>
+          <p class="dish__desc">Дымный лист с суфле из свежих томатов, чеснока и тёртого сыра.</p>
+          <div class="dish__meta">
+            <span>180 г</span>
+            <span class="dish__price">240 ₽</span>
+            <span class="dish__tags">#Вегетарианское #Безглютена</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="breakfast" data-tags="breakfast veg kid glutenfree">
+        <div class="dish__media"><img src="assets/signature.jpg" alt="Кекс с сыром и сливочным маслом" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Кекс с сыром и сливочным маслом</h3>
+          <p class="dish__desc">Ароматный кекс с маскарпоне-глазурью и небольшим помидором на гарнире.</p>
+          <div class="dish__meta">
+            <span>150 г</span>
+            <span class="dish__price">140 ₽</span>
+            <span class="dish__tags">#Вегетарианское #Детское #Безглютена</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="breakfast" data-tags="breakfast veg kid glutenfree">
+        <div class="dish__media"><img src="assets/hero.jpg" alt="Фруктовая каша с мёдом и корицей" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Фруктовая каша с мёдом и корицей</h3>
+          <p class="dish__desc">Овсяная каша с яблоками, клубникой и ложкой кленового сиропа.</p>
+          <div class="dish__meta">
+            <span>260 г</span>
+            <span class="dish__price">210 ₽</span>
+            <span class="dish__tags">#Вегетарианское #Детское #Безглютена</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <!-- Салаты -->
+      <article class="dish" data-cat="salads" data-tags="salads popular">
+        <div class="dish__media"><img src="assets/salad.jpg" alt="Салат «Семейный» — филе куриное, огурцы, фета, купарник и сметана" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Салат «Семейный»</h3>
+          <p class="dish__desc">Филе куриное, огурцы, фета, свежий перец и сметана с каперсами.</p>
+          <div class="dish__meta">
+            <span>350 г</span>
+            <span class="dish__price">340 ₽</span>
+            <span class="dish__tags">#Популярное</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="salads" data-tags="salads new">
+        <div class="dish__media"><img src="assets/signature.jpg" alt="Салат «Осенний марафон» — груша, апельсин, икра осетровая, оливки" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Салат «Осенний марафон»</h3>
+          <p class="dish__desc">Груша, апельсин, икра осетровая, оливки и васаби в медово-чили соусе.</p>
+          <div class="dish__meta">
+            <span>200 г</span>
+            <span class="dish__price">380 ₽</span>
+            <span class="dish__tags">#Новинка</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="salads" data-tags="salads glutenfree">
+        <div class="dish__media"><img src="assets/salad.jpg" alt="Авокадо с селёдкой и кунжутом" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Авокадо с селёдкой и кунжутом</h3>
+          <p class="dish__desc">Авокадо, филе селёдки, чёрный кунжут, лайм и оливковое масло.</p>
+          <div class="dish__meta">
+            <span>160 г</span>
+            <span class="dish__price">310 ₽</span>
+            <span class="dish__tags">#Безглютена</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <!-- Горячее -->
+      <article class="dish" data-cat="hot" data-tags="hot popular">
+        <div class="dish__media"><img src="assets/signature.jpg" alt="Стейк «Тедди» из говядины — серединка розовая, масло и рулетик из сыра" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Стейк «Тедди» из говядины</h3>
+          <p class="dish__desc">Средний прожар: наземная поверхность розовая, с маслом и рулетиком из сыра.</p>
+          <div class="dish__meta">
+            <span>200 г</span>
+            <span class="dish__price">780 ₽</span>
+            <span class="dish__tags">#Популярное</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="hot" data-tags="hot new">
+        <div class="dish__media"><img src="assets/dish_hot.jpg" alt="Жареный лосось в фольге с лимоном" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Жареный лосось в фольге с лимоном</h3>
+          <p class="dish__desc">Филе лосося, завёрнутое в фольгу, с маринованными огурчиками и кусочками капусты.</p>
+          <div class="dish__meta">
+            <span>180 г</span>
+            <span class="dish__price">640 ₽</span>
+            <span class="dish__tags">#Новинка</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="hot" data-tags="hot veg kid glutenfree">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="Суп крем из кабачков «Осень»" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Суп крем из кабачков «Осень»</h3>
+          <p class="dish__desc">Кабачки розовые, сливки и щепоть базилика — признак уютной осени.</p>
+          <div class="dish__meta">
+            <span>320 мл</span>
+            <span class="dish__price">280 ₽</span>
+            <span class="dish__tags">#Вегетарианское #Детское #Безглютена</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <!-- Десерты -->
+      <article class="dish" data-cat="sweets" data-tags="sweets new">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="Тирамису в бокале"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Тирамису в бокале</h3>
+          <p class="dish__desc">Кофейный напиток, маскарпоне и сахарная корочка — в британской вазе.</p>
+          <div class="dish__meta">
+            <span>200 мл</span>
+            <span class="dish__price">220 ₽</span>
+            <span class="dish__tags">#Новинка</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="sweets" data-tags="sweets new">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="Чизкейк с ягодами вишни" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Чизкейк с ягодами вишни</h3>
+          <p class="dish__desc">Тесто, сливки и сок вишни с тонким слоем сахара — для ценителей.</p>
+          <div class="dish__meta">
+            <span>150 г</span>
+            <span class="dish__price">240 ₽</span>
+            <span class="dish__tags">#Новинка</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="sweets" data-tags="sweets popular">
+        <div class="dish__media"><img src="assets/gallery1.jpg" alt="Шоколадный торт пачанга" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Шоколадный торт пачанга</h3>
+          <p class="dish__desc">Из традиционной пасленовой бананы, шоколада и золотистого сахара.</p>
+          <div class="dish__meta">
+            <span>120 г</span>
+            <span class="dish__price">350 ₽</span>
+            <span class="dish__tags">#Популярное</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <!-- Барная карта -->
+      <article class="dish" data-cat="bar" data-tags="bar popular">
+        <div class="dish__media"><img src="assets/gallery1.jpg" alt="«Старый дуб» — классический бурбон" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">«Старый дуб» (классический бурбон)</h3>
+          <p class="dish__desc">Ягодный состав, дистиллят и щепоть корицы.</p>
+          <div class="dish__meta">
+            <span>11 унций (325 мл)</span>
+            <span class="dish__price">320 ₽</span>
+            <span class="dish__tags">#Популярное</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="bar" data-tags="bar">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="«Кровавая Мэри» — коктейль из томатного сока и водки" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">«Кровавая Мэри»</h3>
+          <p class="dish__desc">Популярный коктейль из томатного сока, водки и лимонного сока, с легкой сладостью.</p>
+          <div class="dish__meta">
+            <span>200 мл</span>
+            <span class="dish__price">310 ₽</span>
+            <span class="dish__tags"></span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="bar" data-tags="bar new">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="«Матин» — красное вино" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">«Матин» (красное вино)</h3>
+          <p class="dish__desc">Происхождение — неизвестно даже нашим кураторам. Попробуйте — запишетесь на дегустацию в нашу кабинетную.</p>
+          <div class="dish__meta">
+            <span>50 мл</span>
+            <span class="dish__price">250 ₽</span>
+            <span class="dish__tags">#Новинка</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="bar" data-tags="bar new">
+        <div class="dish__media"><img src="assets/gallery1.jpg" alt="«Золотой гранат» — ароматное белое вино" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">«Золотой гранат» (ароматное белое вино)</h3>
+          <p class="dish__desc">Сезонный белый винный напиток — идеальный начало праздника.</p>
+          <div class="dish__meta">
+            <span>50 мл</span>
+            <span class="dish__price">240 ₽</span>
+            <span class="dish__tags">#Новинка</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+
+      <article class="dish" data-cat="bar" data-tags="bar veg kid">
+        <div class="dish__media"><img src="assets/gallery2.jpg" alt="Морс ягодный «Живой»" loading="lazy"></div>
+        <div class="dish__body">
+          <h3 class="dish__name">Морс ягодный «Живой»</h3>
+          <p class="dish__desc">Морс из ягод с мятой, свежий и без сахара — прохладный день.</p>
+          <div class="dish__meta">
+            <span>180 мл</span>
+            <span class="dish__price">150 ₽</span>
+            <span class="dish__tags">#Вегетарианское #Детское</span>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </article>
+    </div>
+    <div class="dishes-grid__empty" id="dishes-grid__empty">Подходящих блюд не найдено. Попробуйте другую категорию или снимите фильтры.</div>
+  </div>
+</section>
+
+<!-- ============ Специальные предложения ============ -->
+<section class="section specials reveal" id="specials">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section-title">Специальные предложения</h2>
+      <p class="section-sub">То, что отличает нас от обычного ресторана.</p>
+    </div>
+    <div class="specials-grid">
+      <article class="special-card">
+        <div class="special-card__icon">Лн</div>
+        <div>
+          <h3 class="special-card__title">Бизнес-ланч</h3>
+          <p>Суп, второе и компот — от 260 ₽. Идеально для деловых встреч и всех, кто любит вкусно обедать без шума.</p>
+          <a class="special-card__more" href="#menu">Посмотреть меню</a>
+        </div>
+      </article>
+      <article class="special-card">
+        <div class="special-card__icon">СЧ</div>
+        <div>
+          <h3 class="special-card__title">Счастливые часы</h3>
+          <p>С 20:00 до 22:00 каждый день — 20% скидка на все напитки по карте. Никаких очередей.</p>
+        </div>
+      </article>
+      <article class="special-card">
+        <div class="special-card__icon">КВ</div>
+        <div>
+          <h3 class="special-card__title">Караоке-вечера</h3>
+          <p>Каждая пятница в 20:00 — песни и начинки. Пора не только есть, но и зажигать.</p>
+          <a class="special-card__more" href="#booking">Забронировать</a>
+        </div>
+      </article>
+      <article class="special-card">
+        <div class="special-card__icon">БК</div>
+        <div>
+          <h3 class="special-card__title">Банкеты и корпоративы</h3>
+          <p>До 60 гостей, частное меню для больших групп и возможность заказать торт. Приходите к нам на праздник.</p>
+          <a class="special-card__more" href="#contacts">Написать заявку</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Отзывы ============ -->
+<section class="section reviews reveal" id="reviews">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section-title">Отзывы</h2>
+      <p class="section-sub">О чём говорят гости «Застолья».</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review">
+        <img src="assets/reviewer.jpg" alt="Ирина Петрова, 65 лет">
+        <div class="review__head">
+          <div>
+            <p class="review__name">Ирина Петрова</p>
+            <span class="review__stars">★★★★★</span>
+          </div>
+        </div>
+        <p class="review__text">«Ресторан открылся весной 2026 — уже не вернёмся. Столики всегда заняты, а стоит прийти — ощущается, что ты у дома. Отдельное спасибо за чай с мятой».</p>
+        <span class="review__tag">Семья</span>
+      </article>
+
+      <article class="review">
+        <div class="review__avatar" aria-hidden="true">М</div>
+        <div class="review__head">
+          <div>
+            <p class="review__name">Максим Соколов</p>
+            <span class="review__stars">★★★★★</span>
+          </div>
+        </div>
+        <p class="review__text">«С мужем приходим уже лет 10 — стейк «Тедди» и салат «Семейный» всегда с нами. Отдельное спасибо официантам: никакой спешки, только улыбки».</p>
+        <span class="review__tag">Пара</span>
+      </article>
+
+      <article class="review">
+        <div class="review__avatar" aria-hidden="true">О</div>
+        <div class="review__head">
+          <div>
+            <p class="review__name">Ольга Волкова</p>
+            <span class="review__stars">★★★★☆</span>
+          </div>
+        </div>
+        <p class="review__text">«Отдельно — интерьер: золото, венчери, дерево. Бронировать можно не за дни, а за часы — стол у окна редко свободен. Идеально для вечернего посиделья».</p>
+        <span class="review__tag">Прогулки по городу</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Галерея ============ -->
+<section class="section gallery reveal" id="gallery">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section-title">Галерея</h2>
+      <p class="section-sub">Нажмите на атмосферу — откроется зал с несколькими фотографиями.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-album="atmosphere">
+        <img src="assets/about.jpg" alt="Атмосфера ресторана — тёплый интерьер">
+        <span class="gallery-item__caption">Атмосфера (3+ фото зала)</span>
+      </div>
+      <div class="gallery-item" data-album="chef">
+        <img src="assets/chef.jpg" alt="Шеф-повар «Застолье» — Юрий">
+        <span class="gallery-item__caption">Шеф-повар</span>
+      </div>
+      <div class="gallery-item" data-album="signature">
+        <img src="assets/signature.jpg" alt="Основное блюдо — Стейк «Тедди»">
+        <span class="gallery-item__caption">Основные блюда</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Контакты ============ -->
+<section class="section contacts reveal" id="contacts">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section-title">Контакты</h2>
+      <p class="section-sub">Улица Волжская, д. 11, Екатеринбург. Где всегда светло.</p>
+    </div>
+    <div class="contacts__layout">
+      <div class="contacts-list">
+        <div class="contact-row"><span class="contact-label">Адрес</span><span class="contact-value">Улица Волжская, д. 11, 620036 Екатеринбург</span></div>
+        <div class="contact-row"><span class="contact-label">Телефон</span><span class="contact-value"><a href="tel:+73412715024">+7 (343) 271-40-12</a></span></div>
+        <div class="contact-row"><span class="contact-label">Доставка</span><span class="contact-value">350 ₽, бесплатно от 1500 ₽</span></div>
+        <div class="contact-row"><span class="contact-label">Бронирование</span><span class="contact-value"><a href="#booking" data-open="booking">Заявка на стол</a></span></div>
+        <div class="contact-row"><span class="contact-label">Построить маршрут</span><span class="contact-value"><a href="https://yandex.ru/maps/?text=улица Волжская, д. 11, Екатеринбург" target="_blank" rel="noopener">Яндекс.Карты</a></span></div>
+      </div>
+      <div class="map-block" role="region" aria-label="Карта расположения «Застолье»">
+        <iframe src="https://yandex.ru/maps/16/yekaterinburg/?ll=60.5786%2C56.9407&z=14&l=sat" title="Карта расположения ресторана «Застолье»" aria-label="Карта расположения ресторана"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Модальное окно: Бронирование ============ -->
+<div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+  <div class="modal__card">
+    <button class="modal-close" data-close="booking" aria-label="Закрыть">✕</button>
+    <h2 class="modal__title" id="booking-title">Забронировать стол</h2>
+    <form class="booking-form" id="booking-form">
+      <div class="field">
+        <label for="b-date">Дата брони</label>
+        <input type="date" id="b-date" required>
+      </div>
+      <div class="field">
+        <label for="b-time">Время брони</label>
+        <input type="time" id="b-time" required>
+      </div>
+      <div class="field">
+        <label for="b-guests">Количество гостей</label>
+        <select id="b-guests" required>
+          <option value="">Выберите</option>
+          <option>1 человек</option>
+          <option>2 человека</option>
+          <option>3 человека</option>
+          <option>4 человека</option>
+          <option>5 человек</option>
+          <option>6 человек</option>
+          <option>7 человек</option>
+          <option>8 человек</option>
+          <option>9 человек</option>
+          <option>10 человек</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="b-comment">Комментарий</label>
+        <input type="text" id="b-comment" placeholder="Стол у окна, нужен детский стул">
+      </div>
+      <label class="consent">
+        <input type="checkbox" id="b-consent" required> Я даю согласие на обработку персональных данных
+      </label>
+      <button class="btn btn--gold btn--lg" type="submit">Подтвердить бронь</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ Модальное окно: Доставка / Корзина ============ -->
+<div class="modal" id="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+  <div class="modal__card">
+    <button class="modal-close" data-close="cart" aria-label="Закрыть">✕</button>
+    <h2 class="modal__title" id="cart-title">Доставка</h2>
+    <ul class="cart__list" id="cart-items"></ul>
+    <div class="cart__footer">
+      <div class="cart__row cart__row--addr">
+        <span class="cart__row-label">Адрес доставки</span>
+        <input type="text" id="cart-address" placeholder="Улица, дом, квартира или офис" autocomplete="street-address">
+      </div>
+      <div class="cart__row"><span>Доставка</span><span id="cart-delivery" class="gold-text">—</span></div>
+      <div class="cart__row"><span>Итого</span><span id="cart-total" class="gold-text">0 ₽</span></div>
+      <button class="btn btn--gold btn--lg" id="cart-pay" type="button">Оплатить заказ</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Модальное окно: Галерея ============ -->
+<div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Фотогалерея ресторана">
+  <div class="modal__card gallery-modal__card">
+    <button class="modal-close" data-close="gallery" aria-label="Закрыть">✕</button>
+    <div class="gallery-viewer">
+      <img class="gallery-modal__img" src="assets/hero.jpg" alt="Интерьер семейного ресторана «Застолье»">
+      <button class="gallery-arrow gallery-arrow--prev" id="gallery-prev" aria-label="Предыдущая фотография">&#8249;</button>
+      <button class="gallery-arrow gallery-arrow--next" id="gallery-next" aria-label="Следующая фотография">&#8250;</button>
+      <div class="gallery-counter" id="gallery-counter">1 / 4</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Подвал ============ -->
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="footer__left">
+      <p class="footer__title">Застолье</p>
+      <p class="footer__copy">© 2026 Семейный ресторан «Застолье», Екатеринбург.</p>
+    </div>
+    <div class="footer__contacts">
+      <a class="footer__link" href="https://t.me/zastolje" aria-label="Telegram">Telegram</a>
+      <a class="footer__link" href="https://vk.com/zastolje" aria-label="VK">VK</a>
+      <a class="footer__link" href="mailto:hello@zastolje.ru">hello@zastolje.ru</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
